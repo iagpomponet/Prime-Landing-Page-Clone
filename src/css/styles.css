@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap');
+
+:root{
+    --darker-blue : #0f171e;
+    --lighter-blue : #0f79af;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+h1{
+    font-family: Roboto;
+    color: white;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: left;
+    color: #fff;
+    line-height: 1.2!important;
+}
+
+p{
+    font-family: Roboto;
+    color: white;
+    font-weight: 300;
+    font-size: 21px;
+    text-align: left;
+    color: #fff;
+    line-height: 1.2!important;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul, li{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--darker-blue);
+    background-image: linear-gradient(180deg,#1b2530 0,rgba(27,37,48,.85));
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+
+.header__container{
+    padding: 16px 50px;
+}
+
+.header__logo{
+    width: 168px;
+    height: 40px;
+    background: url("../images/prime-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.offers{
+    padding-top: 80px;
+}
+
+.offers p {
+    margin-top: 24px;
+}
+
+.offer__sign{
+    min-height: 70vh;
+    background-position: right top;
+    background-size: cover;
+    padding: 50px 5%;
+}
+
+
+
+
+.text-left .offer__sign-container{
+    padding-right: 55%;
+}
+
+.text-right .offer__sign-container{
+    padding-left: 55%;
+}
+
+.sign__btn-wrapper {
+    margin-top: 48px;
+}
+
+.sign__btn-wrapper {
+    margin-top: 48px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sign__btn-divider {
+    width: 100%;
+    color: #fff;
+    max-width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.sign__btn-divider:before{
+    width: 44%;
+    display: block;
+    content: '';
+    height: 1px;
+    border-top: 1px solid white;
+}
+
+.sign__btn-divider:after{
+    width: 44%;
+    display: block;
+    content: '';
+    border-top: 1px solid white;
+    height: 1px;
+}
+
+.offer__merch{
+    color: white;
+    font-weight: 300;
+    padding-top: 5%;
+    font-size: 15px;
+}
+
+.benefits{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center
+}
+
+.benefits p, .benefits h1{
+    color: black;
+    text-align: center;
+}
+
+.benefits img{
+    width: 300px;
+    height: 300px;
+}
+
+.offer__benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    background: #222 !important;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    min-height: 115px;
+}
+
+.footer__links ul {
+    display: flex;
+}
+
+.footer__links ul li{
+    margin-right: 10px;
+    color: #b1b1b1 !important;
+    font-size: 15px;
+}
+
+.footer__links ul li a{
+    color: var(--lighter-blue);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#offer-1{
+    background-image: linear-gradient(to right, #000 40%, transparent 58%), url(../images/offer-sign.jpg);
+}
+
+#offer-2{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to left, #000 40%, transparent 58%), url(../images/offer-2.jpg);
+}
+
+#offer-3{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #000 40%, transparent 58%), url(../images/offer-3.jpg);
+}
+
+#offer-4{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to left, #000 40%, transparent 58%), url(../images/offer-4.jpg);
+}
+
+#offer-5{
+    display: flex;
+    align-items: center;
+    background-image: url(../images/offer-5.jpg);
+}
+
+#offer-5 h1, #offer-5 p{
+    color: black;
+}
+
+#offer-6{
+    min-height: unset;
+}
+
+/*btn*/
+
+.btn{
+    max-width: 280px;
+    padding: 16px 18px 16px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 12px;
+    border-radius: 2px;
+}
+
+.btn-primary{
+    background: var(--lighter-blue);
+    font-size: 17px!important;
+}
+
+@media (max-width: 991px){
+    #offer-1, #offer-2, #offer-3, #offer-4, #offer-5{
+        background: black;
+    }
+    .text-left .offer__sign-container, .text-right .offer__sign-container{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer__sign-container{
+        width: 100%;
+    }
+
+    .offers__container p {
+        max-width: 450px;
+        text-align: center;
+    }
+
+    .offers__container h1{
+        margin-top: 20px;
+        font-size: 32px;
+    }
+
+    .img-mobile{
+        width: 100%;
+        height: 380px;
+        background-size: inherit;
+    }
+
+    #offer1-mobile-img{
+        background-image: linear-gradient(to top, #000 0, transparent 20%), url(../images/offer-1-mobile.jpg);
+        background-position: right top;
+    }
+
+    #offer2-mobile-img{
+        background-image: linear-gradient(to top, #000 0, transparent 20%) ,url(../images/offer-2-mobile.jpg);
+    }
+
+    #offer3-mobile-img{
+        background-image: linear-gradient(to top, #000 0, transparent 20%) ,url(../images/offer-3-mobile.jpg);
+    }
+
+    #offer4-mobile-img{
+        background-image: linear-gradient(to top, #000 0, transparent 20%), url(../images/offer-4-mobile.jpg);
+    }
+
+    #offer5-mobile-img{
+        background-image: url(../images/offer-5-mobile.jpg);
+    }
+
+    .offer__sign {
+        padding: 0;
+    }
+
+    .offer__merch {
+        margin-bottom: 30px;
+    }
+    
+    .benefits{
+        grid-template-columns: 100%;
+    }
+
+    .offer__benefit-item {
+        margin: 30px 0;
+    }
+
+    .sign__btn-wrapper{
+        height: 250px;
+    }
+
+    #offer-1 .btn{
+        max-width: 280px;
+    }
+
+    .btn{
+        max-width: 450px;
+        width: 450px;
+    }
+   
+    #offer5-mobile-img {
+        background-image: url(../images/offer-5-mobile.jpg);
+        height: 380px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media(max-width: 512px){
+    .offers__container p{
+        max-width: 300px;
+    }
+
+    .offers__container h1{
+        text-align: center;
+    }
+
+    .btn{
+        width: 300px;
+        max-width: 300px;
+    }
+
+    .offer__merch {
+        text-align: center;
+        margin-bottom: 30px;
+        max-width: 300px;
+    }
+
+    .sign__btn-wrapper {
+        height: 200px;
+    }
+
+    .footer__links{
+        margin-bottom: 50px;
+    }
+
+    .footer__links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__links ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer__links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
